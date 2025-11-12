@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Benchmark Concurrente</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        input { margin: 5px; }
+        button { margin: 5px; }
+        table { border-collapse: collapse; margin-top: 20px; width: 100%; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+        th { background-color: #f0f0f0; }
+    </style>
+</head>
+<body>
+<h1>Benchmark Concurrente - Spring Boot</h1>
+
+<div>
+    <label>Tareas: <input type="number" id="tasks" value="50"></label>
+    <label>Hilos: <input type="number" id="threads" value="8"></label>
+    <button onclick="startBenchmark()">Ejecutar Benchmark</button>
+</div>
+
+<h2>Resultados</h2>
+<table id="resultsTable">
+    <thead>
+    <tr>
+        <th>Modo</th>
+        <th>Tiempo total (ms)</th>
+        <th>Promedio por tarea (ms)</th>
+        <th>Speedup</th>
+        <th>Eficiencia</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+    async function startBenchmark() {
+        const tasks = document.getElementById('tasks').value;
+        const threads = document.getElementById('threads').value;
+
+        const response = await fetch(`/benchmark/start?tasks=${tasks}&threads=${threads}`, {
+            method: 'POST'
+        });
+
+        if (!response.ok) {
+            alert('Error ejecutando benchmark');
+            return;
+        }
+
+        const data = await response.json();
+        const tbody = document.querySelector('#resultsTable tbody');
+        tbody.innerHTML = '';
+
+        data.results.forEach(r => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                    <td>${r.mode}</td>
+                    <td>${r.timeMs}</td>
+                    <td>${r.averageMs}</td>
+                    <td>${r.speedup}</td>
+                    <td>${r.efficiency}</td>
+                `;
+            tbody.appendChild(row);
+        });
+    }
+</script>
+</body>
+</html>
