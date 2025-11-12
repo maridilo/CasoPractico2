@@ -15,7 +15,7 @@ Comparar el rendimiento de tres estrategias de ejecución para un conjunto de ta
 Se miden: tiempo total, promedio por tarea, *speedup* y *eficiencia*.
 
 ## Requisitos
--Spring Boot
+-Spring Boot  
 -Controlador REST
 
 ## Cómo ejecutar
