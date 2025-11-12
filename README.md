@@ -16,7 +16,11 @@ Se miden: tiempo total, promedio por tarea, *speedup* y *eficiencia*.
 
 ## Requisitos
 -Spring Boot  
--Controlador REST
+-Controlador REST  
+-Servicio (@service) encargado de ejecutar las pruebas  
+-Activación de ejecución asíncrona con @EnableAsync  
+
+### Estrategias de ejecución  
 
 ## Cómo ejecutar
 -Desde Postman con la siguiente URL:
