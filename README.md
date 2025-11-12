@@ -2,8 +2,8 @@ https://github.com/maridilo/CasoPractico2.git
 # Benchmarking de Estrategias de Programación Multihilo con Spring Boot
 
 ## Integrantes
-- María Díaz - Heredero López — maridilo@myuax.com
-- Cintia Santillan Garcia — csantill@myuax.com
+- María Díaz - Heredero López - maridilo@myuax.com
+- Cintia Santillan Garcia - csantill@myuax.com
 - Suren Hashemi Alam - sjoorhas@myuax.com
 
 ## Objetivo
