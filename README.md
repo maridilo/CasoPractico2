@@ -20,14 +20,11 @@ Se miden: tiempo total, promedio por tarea, *speedup* y *eficiencia*.
 - Puerto por defecto: `8080`
 
 ## Cómo ejecutar
-```bash
-# Desde la carpeta del proyecto (donde está pom.xml)
-mvn spring-boot:run
+-Desde Postman con la siguiente URL:
+http://localhost:8080/benchmark/start?tasks=50&threads=8
 
-# Alternativa: construir JAR
-mvn clean package
-java -jar target/benchmark-1.0.0.jar
-```
+-Desde el siguiente link al ejecutar el código: 
+http://localhost:8080/
 
 ## Endpoints
 ### 1) Iniciar benchmark
