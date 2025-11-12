@@ -4,7 +4,7 @@ https://github.com/maridilo/CasoPractico2.git
 ## Integrantes
 - María Díaz - Heredero López — maridilo@myuax.com
 - Cintia Santillan Garcia — csantill@myuax.com
-- Nombre 3 — email@dominio
+- Suren Hashemi Alam - sjoorhas@myuax.com
 
 ## Objetivo
 Comparar el rendimiento de tres estrategias de ejecución para un conjunto de tareas CPU‑bound en Java con Spring Boot:
@@ -130,8 +130,4 @@ Registrar tiempos, *speedup* y *eficiencia* para cada `threads` y justificar con
 
 ## Pruebas
 Incluye `CasoPractico2ApplicationTests` (carga de contexto). Se pueden añadir pruebas de servicio midiendo tiempos sintéticos.
-
-## Autores y versión
-- Curso: Programación Concurrente 25/26 — Caso Práctico Tema 2
-- Versión del artefacto: `1.0.0` (ver `pom.xml`)
 
