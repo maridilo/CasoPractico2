@@ -21,6 +21,28 @@ Se miden: tiempo total, promedio por tarea, *speedup* y *eficiencia*.
 -Activación de ejecución asíncrona con @EnableAsync  
 
 ### Estrategias de ejecución  
+-Secuencial  
+-ExecutorService  
+-Spring Async  
+
+### Medición de rendimiento  
+-Tiempo total de ejecucion  
+-Promedio por tarea  
+-Speedup  
+-Eficiencia  
+-Resultados en JSON  
+
+### Configuración de hilos  
+-Número de tareas e hilos configurable desde el endpoint /benchmark?tasks=N&threads=M  
+-Executor personalizado con @Configuration y ThreadPoolTaskExecutor  
+
+### Concurrencia y seguridad  
+Garantizar sincronización si las tareas acceden a recursos compartidos  
+
+### Endpoints  
+-POST -> /benchmark/start  
+-GET -> /benchmark/result  
+-GET -> /benchmark/modes
 
 ## Cómo ejecutar
 -Desde Postman con la siguiente URL:
