@@ -3,7 +3,7 @@ https://github.com/maridilo/CasoPractico2.git
 
 ## Integrantes
 - María Díaz - Heredero López — maridilo@myuax.com
-- Nombre 2 — email@dominio
+- Cintia Santillan Garcia — csantill@myuax.com
 - Nombre 3 — email@dominio
 
 ## Objetivo
