@@ -15,9 +15,8 @@ Comparar el rendimiento de tres estrategias de ejecución para un conjunto de ta
 Se miden: tiempo total, promedio por tarea, *speedup* y *eficiencia*.
 
 ## Requisitos
-- Java 17+
-- Maven 3.9+
-- Puerto por defecto: `8080`
+-Spring Boot
+-Controlador REST
 
 ## Cómo ejecutar
 -Desde Postman con la siguiente URL:
